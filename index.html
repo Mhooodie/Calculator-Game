@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html land ="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <p id="background-history"></p>
+
+    <div id="rulesPopup" class="popup">
+        <div class="popup-content">
+            <h2>How to Play</h2>
+            <p>
+                Click I, II, and III to get hints.<br>
+                Use the hints to guess the correct number.<br>
+                Get all 3 correct to win!
+            </p>
+            <button onclick="closeRulesPopup()">Got it!</button>
+        </div>
+    </div>
+
+    <div id="winPopup" class="popup" style="display:none;">
+        <div class="popup-content">
+            <h2>Congratulations!</h2>
+            <p>You solved all 3 hints!</p>
+            <button onclick="closeWinPopup()">Awesome!</button>
+        </div>
+    </div>
+
+    <div id="calculator">
+        <input id="display" readonly>
+        <div id="keys">
+            <button onclick="appendToDisplay('+')" class="operator-btn">+</button>
+            <button onclick="appendToDisplay('7')">7</button>
+            <button onclick="appendToDisplay('8')">8</button>
+            <button onclick="appendToDisplay('9')">9</button>
+            <button onclick="appendToDisplay('-')" class="operator-btn">-</button>
+            <button onclick="appendToDisplay('4')">4</button>
+            <button onclick="appendToDisplay('5')">5</button>
+            <button onclick="appendToDisplay('6')">6</button>
+            <button onclick="appendToDisplay('*')" class="operator-btn">*</button>
+            <button onclick="appendToDisplay('1')">1</button>
+            <button onclick="appendToDisplay('2')">2</button>
+            <button onclick="appendToDisplay('3')">3</button>
+            <button onclick="appendToDisplay('/')" class="operator-btn">/</button>
+            <button onclick="appendToDisplay('0')">0</button>
+            <button onclick="appendToDisplay('.')">.</button>
+            <button onclick="calculate()">=</button>
+            <button onclick="clearDisplay()" class="operator-btn">C</button>
+            <button onclick="unlockAchievement('I')" class="achievement-btn" id="achievementI">I</button>
+            <button onclick="unlockAchievement('II')" class="achievement-btn" id="achievementII">II</button>
+            <button onclick="unlockAchievement('III')" class="achievement-btn" id="achievementIII">III</button>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
