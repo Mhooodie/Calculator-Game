@@ -29,13 +29,6 @@ CSS3 – styling & layout
 JavaScript – logic & interactivity
 canvas-confetti – celebration effect
 
-📂 Project Structure
-/Calculator-Game
-│── index.html
-│── styles.css
-│── index.js
-│── README.md
-
 🎉 Winning Condition
 To win the game: 
 Correctly solve all 3 hints
