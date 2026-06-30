@@ -1,4 +1,5 @@
 🚀 Calculator Game
+
 A fun, interactive calculator game built with HTML, CSS, and JavaScript.
 Solve three hidden number challenges using clues unlocked through the calculator interface — and celebrate with popups and confetti when you win!
 
@@ -41,3 +42,5 @@ Clone the repository:
 git clone https://github.com/your-username/Calculator-Game.git
 Open index.html in any browser.
 No installation or build tools needed.
+
+<img width="1104" height="1441" alt="Screenshot (9)" src="https://github.com/user-attachments/assets/21b7204c-2bcf-44aa-8a22-2faa1430d226" />
